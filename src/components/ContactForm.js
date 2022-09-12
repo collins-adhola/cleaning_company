@@ -6,6 +6,7 @@ import Typography from "@material-ui/core/Typography";
 import Image from "material-ui-image";
 import { Box } from "@mui/material";
 import Form from "./Form";
+import { Button } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -16,8 +17,12 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     display: "flex",
     flexDirection: "row",
+    padding: "80px",
+    paddingBottom: "180px",
+    marginTop: 20,
+    alignItems: "center",
 
-    // width: "1200px",
+    width: "100%",
     backgroundColor: "#2E3A3D",
     // margin: "auto",
     // justifyContent: "space-between",
@@ -38,16 +43,6 @@ export default function ContactForm() {
 
   return (
     <div>
-      {/* <Box>
-        <Typography
-          variant="h4"
-          color="initial"
-          className={classes.services}
-          display="grid"
-        >
-          CONTACT US
-        </Typography>
-      </Box> */}
       <Grid container spacing={3} className={classes.root}>
         <Grid item xs={12} sm={6} className={classes.aboutText}>
           <div>
@@ -61,11 +56,11 @@ export default function ContactForm() {
                 paddingBottom: "20px",
               }}
             >
-              Contact Us
+              <strong>Contact Us</strong>
             </Typography>
           </div>
 
-          <div>
+          <Box>
             <Typography
               variant="subtitle2"
               color="initial"
@@ -83,13 +78,27 @@ export default function ContactForm() {
               <br />
             </Typography>
             <Typography style={{ color: "green", paddingBottom: "20px" }}>
-              deepcleaning@btconnect.com <br /> 0203322 5579
+              info@sanitech.com <br /> 0203322 5333
             </Typography>
-          </div>
+          </Box>
         </Grid>
 
         <Grid item sm={1} md={6}>
-          <Form />
+          <Box>
+            <Form />
+          </Box>
+          {/* <Box>
+            <Button
+              className={classes.quoteIcon}
+              variant="outlined"
+              style={{ backgroundColor: "#2B748C", margin: "auto" }}
+              onClick={() => {
+                alert("clicked");
+              }}
+            >
+              Send Request
+            </Button>
+          </Box> */}
         </Grid>
       </Grid>
     </div>

@@ -4,6 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import Image from "material-ui-image";
+import { Box } from "@mui/material";
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -19,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "#FFFFFF",
     margin: "auto",
     justifyContent: "space-between",
-    marginTop: "93PX",
+    marginTop: "60px",
   },
   aboutText: {
     backgroundColor: "#E1E1E1",
@@ -61,6 +62,10 @@ const useStyles = makeStyles((theme) => ({
     backgroundRepeat: "no-repeat",
     width: "100%",
   },
+  services: {
+    padding: "10px",
+    textAlign: "center",
+  },
 }));
 
 export default function About() {
@@ -68,6 +73,17 @@ export default function About() {
 
   return (
     <div>
+   
+      <Box>
+        <Typography
+          variant="h4"
+          color="initial"
+          className={classes.services}
+          display="grid"
+        >
+          ABOUT US
+        </Typography>
+      </Box>
       <Grid container spacing={3} className={classes.root}>
         <Grid item xs={12} sm={6} className={classes.aboutText}>
           <div>

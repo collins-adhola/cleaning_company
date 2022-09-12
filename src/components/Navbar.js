@@ -19,10 +19,10 @@ import { Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import MenuIcon from "@material-ui/icons/Menu";
 import { ChevronLeft } from "@material-ui/icons";
-import {useState, useEffect} from 'react'
+import { useState, useEffect } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
-
   container: {
     ...theme.container,
   },
@@ -53,57 +53,55 @@ const useStyles = makeStyles((theme) => ({
   indicator: {
     backgroundColor: theme.palette.common.light,
   },
-  drawerHeader:{
-    display:'flex',
-    justifyContent:'flex-end',
-    alignItems:'center',
-    padding:theme.spacing(0,1),
+  drawerHeader: {
+    display: "flex",
+    justifyContent: "flex-end",
+    alignItems: "center",
+    padding: theme.spacing(0, 1),
     //necesary for content to be below bar
     ...theme.mixins.toolbar,
-
-  }
+  },
 }));
 function Navbar() {
   const [openDrawer, setOpenDrawer] = useState(false);
 
-  const handleDrawerOpen= ()=>{
-    setOpenDrawer(true)
-  }
+  const handleDrawerOpen = () => {
+    setOpenDrawer(true);
+  };
 
-   const handleDrawerClose = () => {
-     setOpenDrawer(false);
-   };
-   const[tabIndex, setTabIndex]= useState(false);
-   const handleTabIndexChange = (event,index)=>{
+  const handleDrawerClose = () => {
+    setOpenDrawer(false);
+  };
+  const [tabIndex, setTabIndex] = useState(false);
+  const handleTabIndexChange = (event, index) => {
     setTabIndex(index);
+  };
 
-   }
+  const routes = [
+    { name: "Home", link: "/", index: 0 },
+    { name: "About", link: "/about", index: 1 },
+    {
+      name: "DEEP CLEANING SERVICES",
+      link: "/deep-cleaning-services",
+      index: 2,
+    },
+    { name: "OTHER SERVICES", link: "/other-services", index: 3 },
+    { name: "CONTACT US", link: "/contact", index: 4 },
+  ];
 
-    const routes = [
-      { name: "HOME", link: "/", index: 0 },
-      { name: "ABOUT", link: "/about", index: 1 },
-      {
-        name: "DEEP CLEANING SERVICES",
-        link: "/deep-cleaning-services",
-        index: 2,
-      },
-      { name: "OTHER SERVICES", link: "/other-services", index: 3 },
-      { name: "NEWS", link: "/news", index: 4 },
-    ];
+  useEffect(() => {
+    routes.forEach((route) => {
+      switch (window.location.pathname) {
+        case `${route.link}`:
+          setTabIndex(route.index);
+          break;
+        default:
+          return false;
+      }
+    });
+    // eslint-disable-next-line
+  }, [window.location.pathname]);
 
-    useEffect(() => {
-      routes.forEach((route) => {
-        switch (window.location.pathname) {
-          case `${route.link}`:
-            setTabIndex(route.index);
-            break;
-          default:
-            return false;
-        }
-      });
-      // eslint-disable-next-line
-    }, [window.location.pathname]);
-   
   const classes = useStyles();
   return (
     <Box>

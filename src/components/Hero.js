@@ -154,7 +154,7 @@ export default function Hero() {
                   component="h2"
                   className={classes.heading}
                 >
-                  Kitchen Deep Cleaning & Extraction Cleaning
+                  Kitchen Deep Cleaning & <br/>Extraction Cleaning
                   <br />
                 </Typography>
 

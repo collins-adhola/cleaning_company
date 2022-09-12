@@ -1,8 +1,19 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
+import { Box, Grid, Typography } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   root: {
+    display: "flex",
+    justifyContent: "center",
+    textAlign: "center",
+  },
+  topNav: {
+    display: "flex",
+    justifyContent: "center",
+    textAlign: "center",
+  },
+  copyright: {
     position: "fixed",
     width: "100%",
     bottom: "0px",
@@ -15,5 +26,20 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Footer() {
   const classes = useStyles();
-  return( <div className={classes.root}>COPYRIGHT &copy; Sanitech 2022</div>);
+  return (
+    <>
+      <Grid container className={classes.root}>
+        <Grid item>
+          <Box>
+            <Typography>SANITECH LTD</Typography>
+          </Box>
+        </Grid>
+        <Grid item>Useful Pages</Grid>
+        <Grid item>Legal</Grid>
+        <Grid item>Info</Grid>
+      </Grid>
+
+      <div className={classes.copyright}>COPYRIGHT &copy; Sanitech 2022</div>
+    </>
+  );
 }

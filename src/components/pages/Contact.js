@@ -28,12 +28,6 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: 12,
   },
 
-  // paper: {
-  //   padding: theme.spacing(2),
-  //   textAlign: "center",
-  //   color: theme.palette.text.secondary,
-
-  // },
   boxItem: {
     height: "120px",
   },
@@ -50,52 +44,52 @@ export default function Contact() {
 
   return (
     // <div className={classes.root}>
-      <Grid container spacing={0}>
-        <Grid item xs={12} sm={6}>
-          <Card className={classes.root}>
-            <CardContent>
-              <Typography variant="h5" component="h2">
-                Contact us
-              </Typography>
+    <Grid container spacing={0}>
+      <Grid item xs={12} sm={6}>
+        <Card className={classes.root}>
+          <CardContent>
+            <Typography variant="h5" component="h2">
+              Contact us
+            </Typography>
 
-              <Typography variant="body2" component="h6">
-                Speak to us today and find out how we can give your kitchen a
-                deep clean.
-              </Typography>
-            </CardContent>
-          </Card>
-        </Grid>
-        <Grid item xs={12} sm={3}>
-          <Card className={classes.root}>
-            <CardContent>
-              {/* <CallIcon /> */}
-              <Typography variant="h5" component="h2">
-                Telephone us
-              </Typography>
-
-              <Typography variant="body2" component="h6">
-                0207699652
-              </Typography>
-            </CardContent>
-          </Card>
-        </Grid>
-        <Grid item xs={12} sm={3}>
-          <Card className={classes.root} variant="elevation">
-            <CardContent>
-            {/* <EmailIcon /> */}
-              <Typography variant="h5" component="h2">
-                Email us
-                <br />
-              </Typography>
-
-              <Typography variant="body2" component="h6">
-                deepclean.outlook.com
-                <br />
-              </Typography>
-            </CardContent>
-          </Card>
-        </Grid>
+            <Typography variant="subtitle2" component="h6">
+              Speak to us today and find out how we can give your kitchen a deep
+              clean.
+            </Typography>
+          </CardContent>
+        </Card>
       </Grid>
+      <Grid item xs={12} sm={3}>
+        <Card className={classes.root}>
+          <CardContent>
+            {/* <CallIcon /> */}
+            <Typography variant="h5" component="h2">
+              Telephone us
+            </Typography>
+
+            <Typography variant="subtitle2" component="h6">
+              0207699652
+            </Typography>
+          </CardContent>
+        </Card>
+      </Grid>
+      <Grid item xs={12} sm={3}>
+        <Card className={classes.root} variant="elevation">
+          <CardContent>
+            {/* <EmailIcon /> */}
+            <Typography variant="h5" component="h2">
+              Email us
+              <br />
+            </Typography>
+
+            <Typography variant="subtitle2" component="h6">
+              deepclean.outlook.com
+              <br />
+            </Typography>
+          </CardContent>
+        </Card>
+      </Grid>
+    </Grid>
     // </div>
   );
 }
