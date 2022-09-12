@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import { BrowserRouter } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Footer from "./components/Footer";
+import Contact from "./components/pages/Contact";
+import About from "./components/pages/About";
+import Services from "./components/pages/Services";
+import Hygiene from "./components/pages/Hygiene";
+import React, { Fragment } from "react";
+import Cookie from "./components/Cookie";
+import ContactForm from "./components/ContactForm";
 
 function App() {
+  // let history = useHistory();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <Navbar />
+        <Hero />
+        <Contact />
+        <About />
+        <Services />
+
+        <Hygiene />
+        <ContactForm />
+        <Cookie />
+
+        <Footer />
+      </BrowserRouter>
+    </>
   );
 }
 
