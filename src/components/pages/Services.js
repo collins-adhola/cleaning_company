@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
@@ -8,6 +8,8 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import { Box, Grid } from "@material-ui/core";
+import CookingEquipment from "./CookingEquipment";
+import KitchenDeepClean from "./KitchenDeepClean";
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -15,11 +17,11 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "row",
     flexGrow: "1",
-    justifyContent: "space-around",
+    justifyContent: "space-between",
     alignItems: "end",
     // border: "1px solid green",
     flex: "0 0 auto",
-    // alignSelf: "stretch",
+    alignSelf: "stretch",
     // "& .MuiGrid-grid-xs-12": {
     //   color: "green",
     // },
@@ -30,15 +32,29 @@ const useStyles = makeStyles((theme) => ({
   },
   textspace: {
     height: "140px",
-    width:"100%"
+    width: "100%",
   },
 }));
 
-export default function MediaCard() {
+export default function MediaCard(props) {
   const classes = useStyles();
+  // const [deepClean, setDeepClean] = useState(false);
+
+  // const handleDeepclean = (e) => {
+  //   // return console.log("I have been clicked");
+  //   // return setDeepClean("/deep-cleaning-services")
+    
+  //   setDeepClean( <KitchenDeepClean/> , console.log("hi"))
+  // };
+
+ 
 
   return (
-    <div>
+    <div
+    // style={{
+    //   background: "linear-gradient(to right bottom, #479999, #82ffa1)",
+    // }}
+    >
       <Box>
         <Typography
           variant="h4"
@@ -49,7 +65,7 @@ export default function MediaCard() {
           OUR SERVICES
         </Typography>
       </Box>
-      <Grid container className={classes.container}>
+      <Grid container className={classes.container} space={2}>
         <Grid item xs={12} md={6}>
           <Card className={classes.root} space={3}>
             <CardActionArea>
@@ -84,7 +100,7 @@ export default function MediaCard() {
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button size="small" color="primary">
+              <Button size="small" color="primary" >
                 Learn More
               </Button>
             </CardActions>
@@ -119,7 +135,11 @@ export default function MediaCard() {
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button size="small" color="primary">
+              <Button
+                size="small"
+                color="primary"
+                onClick={() => <CookingEquipment />}
+              >
                 Learn More
               </Button>
             </CardActions>
@@ -201,4 +221,3 @@ export default function MediaCard() {
     </div>
   );
 }
-

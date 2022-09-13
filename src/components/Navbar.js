@@ -86,7 +86,7 @@ function Navbar() {
       index: 2,
     },
     { name: "OTHER SERVICES", link: "/other-services", index: 3 },
-    { name: "CONTACT US", link: "/contact", index: 4 },
+    { name: "CONTACT Us", link: "/contact", index: 4 },
   ];
 
   useEffect(() => {

@@ -73,7 +73,6 @@ export default function About() {
 
   return (
     <div>
-   
       <Box>
         <Typography
           variant="h4"
@@ -113,7 +112,12 @@ export default function About() {
           </div>
         </Grid>
 
-        <Grid item sm={1} md={6}>
+        <Grid
+          item
+          sm={1}
+          md={4}
+          style={{ height: "50%", width: "50%", padding: "60px" }}
+        >
           <Image src="/images/kitchen-vent-1.jpeg" />
         </Grid>
       </Grid>

@@ -28,13 +28,13 @@ const useStyles = makeStyles((theme) => ({
     // position: "fixed",
     backgroundRepeat: "no-repeat",
     width: "100%",
-    minHeight: "100vh",
+    minHeight: "60vh",
     //  filter:'blur(8px) ',
   },
   paper: {
     textAlign: "center",
     margin: "30px",
-    backgroundColor: "rgba(0,0,0, 0.6)",
+    backgroundColor: "rgba(0,0,0, 0.2)",
     color: "white",
     justifyContent: "center",
   },
@@ -49,21 +49,12 @@ const useStyles = makeStyles((theme) => ({
     fontSize: theme.extraBold,
   },
 
-  // mainGrid:{
-  //   display:"flex" ,
-  //   justifyContent:"center",
-  //    alignItems:"center"
-  // },
   btnHero: {
     backgroundColor: "#2E819C",
     marginLeft: "80px",
     color: "white",
     width: "auto",
     fontSize: "15px",
-
-    // justifyContent: "center",
-    // alignItems:"center",
-    // margin:'auto'
   },
 
   heroGridLg: {
@@ -118,7 +109,7 @@ export default function Hero() {
   ];
 
   // const listHandler= services.map(service =>
-  
+
   //   console.log(service, i)
   // )
   const service = services.map((x) => x * 2);
@@ -154,7 +145,8 @@ export default function Hero() {
                   component="h2"
                   className={classes.heading}
                 >
-                  Kitchen Deep Cleaning & <br/>Extraction Cleaning
+                  Kitchen Deep Cleaning & <br />
+                  Extraction Cleaning
                   <br />
                 </Typography>
 
@@ -190,7 +182,6 @@ export default function Hero() {
                   component="h6"
                   className={classes.heroList}
                 >
-             
                   <div>
                     <List>
                       <ListItem>

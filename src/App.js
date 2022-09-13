@@ -18,10 +18,28 @@ import {
   useHistory,
   Switch,
 } from "react-router-dom";
-
+import OtherServices from "./components/pages/OtherServices";
+import TumbleDryerVent from "./components/pages/TumbleDryerVent";
+import KitchenDeepClean from "./components/pages/KitchenDeepClean";
 
 function App() {
   // let history = useHistory();
+  // const renderDeep = () => {
+  //   if (handleDeepclean) {
+  //     return (
+  //       <BrowserRouter>
+  //         <Routes>
+  //           <Route
+  //             exact
+  //             path="/deep-cleaning-services"
+  //             element={<KitchenDeepClean />}
+  //           />
+  //         </Routes>
+  //       </BrowserRouter>
+  //     );
+  //   }
+  // };
+
   return (
     <>
       <BrowserRouter>
@@ -33,15 +51,25 @@ function App() {
           <Route exact path="/About" element={<About />} />
         </Routes>
         <Routes>
-          <Route exact path="/deep-cleaning-services" element={<Services />} />
+          <Route
+            exact
+            path="/deep-cleaning-services"
+            element={<KitchenDeepClean />}
+          />
         </Routes>
 
         <Routes>
-          <Route exact path="/other-services" element={<Services />} />
+          <Route
+            exact
+            path="/other-services"
+            element={<OtherServices />}
+          />
         </Routes>
         <Routes>
           <Route exact path="/contact" element={<ContactForm />} />
         </Routes>
+        {/* <TumbleDryerVent/> */}
+        {/* <KitchenDeepClean/> */}
 
         {/* <Hero />
         <Contact />
