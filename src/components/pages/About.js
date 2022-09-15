@@ -23,13 +23,15 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "60px",
   },
   aboutText: {
+    ...theme.fonts.light,
     backgroundColor: "#E1E1E1",
     borderLeft: "2px solid #2E819C",
     borderRight: "12px",
 
     paddingLeft: "30px",
     lineHeight: "30px",
-    fontWeight: "50px",
+    fontWeight: "90px",
+    fontSize: "20px",
   },
 
   bodyText: {
@@ -47,7 +49,7 @@ const useStyles = makeStyles((theme) => ({
     ...theme.fonts.extraBold,
     // fontSize: "theme.extraBold",
     fontSize: "28px",
-    backgroundColor: "green",
+    backgroundColor: "...theme.palette.beta",
     marginBottom: "40px",
     width: "30%",
     // maxWidth: "100%",
@@ -63,7 +65,7 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
   },
   services: {
-    padding: "10px",
+    padding: "5px",
     textAlign: "center",
   },
 }));
@@ -75,7 +77,7 @@ export default function About() {
     <div>
       <Box>
         <Typography
-          variant="h4"
+          variant="h5"
           color="initial"
           className={classes.services}
           display="grid"
@@ -114,9 +116,9 @@ export default function About() {
 
         <Grid
           item
-          sm={1}
-          md={4}
-          style={{ height: "50%", width: "50%", padding: "60px" }}
+          sm={12}
+          md={6}
+          // style={{ height: "50%", width: "50%", padding: "60px" }}
         >
           <Image src="/images/kitchen-vent-1.jpeg" />
         </Grid>

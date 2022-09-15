@@ -73,12 +73,13 @@ export default function CookingEquipment() {
             </Typography>
           </CardContent>
           <CardActions disableSpacing>
-            <IconButton aria-label="add to favorites">
+            {/* <IconButton aria-label="add to favorites">
               <FavoriteIcon />
             </IconButton>
             <IconButton aria-label="share">
               <ShareIcon />
-            </IconButton>
+            </IconButton> */}
+            <Typography>Learn more</Typography>
             <IconButton
               className={clsx(classes.expand, {
                 [classes.expandOpen]: expanded,
@@ -92,13 +93,12 @@ export default function CookingEquipment() {
           </CardActions>
           <Collapse in={expanded} timeout="auto" unmountOnExit>
             <CardContent>
-              <Typography paragraph>Method:</Typography>
               <Typography paragraph>
-                We make use of a variety of professional deep cleaning
-                techniques to get the job done including the use of solution dip
-                tanks to remove carbon, fat and grease deposits from cooking
-                equipment, which is done by dismantling each appliance and
-                cleaning each component individually.
+                <strong>Sanitech</strong> makes use of a variety of professional
+                deep cleaning techniques to get the job done including the use
+                of solution dip tanks to remove carbon, fat and grease deposits
+                from cooking equipment, which is done by dismantling each
+                appliance and cleaning each component individually.
               </Typography>
               <Typography paragraph>
                 The Problem When using a tumble dryer, the vent will eventually

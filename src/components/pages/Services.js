@@ -7,7 +7,7 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-import { Box, Grid } from "@material-ui/core";
+import { Box, Grid, Link } from "@material-ui/core";
 import CookingEquipment from "./CookingEquipment";
 import KitchenDeepClean from "./KitchenDeepClean";
 
@@ -25,6 +25,9 @@ const useStyles = makeStyles((theme) => ({
     // "& .MuiGrid-grid-xs-12": {
     //   color: "green",
     // },
+    "& button": {
+      color: "#2E819C",
+    },
   },
   services: {
     padding: "50px",
@@ -43,11 +46,9 @@ export default function MediaCard(props) {
   // const handleDeepclean = (e) => {
   //   // return console.log("I have been clicked");
   //   // return setDeepClean("/deep-cleaning-services")
-    
+
   //   setDeepClean( <KitchenDeepClean/> , console.log("hi"))
   // };
-
- 
 
   return (
     <div
@@ -100,9 +101,25 @@ export default function MediaCard(props) {
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button size="small" color="primary" >
+              <Button
+                className={classes.btn}
+                size="small"
+                color="primary"
+                type="button"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.location.href = "/deep-cleaning-services";
+                }}
+              >
                 Learn More
               </Button>
+
+              {/* <Link to="/deep-cleaning-services">
+                <Button size="small" color="primary">
+                  Learn More
+                </Button>
+              </Link> */}
+              {/* <a href="/deep-cleaning-services">Learn More</a> */}
             </CardActions>
           </Card>
         </Grid>
@@ -138,7 +155,11 @@ export default function MediaCard(props) {
               <Button
                 size="small"
                 color="primary"
-                onClick={() => <CookingEquipment />}
+                type="button"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.location.href = "/other-services";
+                }}
               >
                 Learn More
               </Button>
@@ -174,7 +195,15 @@ export default function MediaCard(props) {
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button size="small" color="primary">
+              <Button
+                size="small"
+                color="primary"
+                type="button"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.location.href = "/other-services";
+                }}
+              >
                 Learn More
               </Button>
             </CardActions>
@@ -211,7 +240,15 @@ export default function MediaCard(props) {
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button size="small" color="primary">
+              <Button
+                size="small"
+                color="primary"
+                type="button"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.location.href = "/other-services";
+                }}
+              >
                 Learn More
               </Button>
             </CardActions>

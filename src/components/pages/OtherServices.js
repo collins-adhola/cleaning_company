@@ -60,8 +60,15 @@ const useStyles = makeStyles((theme) => ({
     // position: "fixed",
     backgroundRepeat: "no-repeat",
     width: "100%",
-    minHeight: "40vh",
+    minHeight: "25vh",
     //  filter:'blur(8px) ',
+  },
+  text: {
+    ...theme.fonts.bold,
+    textAlign: " center",
+    lineHeight: "150px",
+    color: "white",
+    fontSize: "40px",
   },
 }));
 
@@ -78,20 +85,22 @@ export default function OtherServices() {
       <Box
         className={classes.backImg}
         style={{
-          background: "linear-gradient(to right bottom, #430089, #82ffa1)",
+          // background: "linear-gradient(to right bottom, #430089, #82ffa1)",
           backgroundAttachment:
             '<Image src="/images/kitchen-cleaning-1.jpeg" />',
         }}
       >
-        <Typography variant="h5">Other Services we provide</Typography>
+        <Typography variant="h5" className={classes.text}>
+          Other Services we provide
+        </Typography>
       </Box>
       <Grid
         container
         spacing={1}
         className={classes.root}
-        style={{
-          background: "linear-gradient(to right bottom, #430089, #82ffa1)",
-        }}
+        // style={{
+        //   background: "linear-gradient(to right bottom, #430089, #82ffa1)",
+        // }}
       >
         <Grid item sm={12} md={3}>
           <CookingEquipment />

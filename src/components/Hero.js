@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     textAlign: "center",
     margin: "30px",
-    backgroundColor: "rgba(0,0,0, 0.2)",
+    backgroundColor: "rgba(0,0,0, 0.1)",
     color: "white",
     justifyContent: "center",
   },

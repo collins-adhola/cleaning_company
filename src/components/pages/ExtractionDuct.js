@@ -83,12 +83,13 @@ export default function ExtractionDuct() {
             </Typography>
           </CardContent>
           <CardActions disableSpacing>
-            <IconButton aria-label="add to favorites">
+            {/* <IconButton aria-label="add to favorites">
               <FavoriteIcon />
             </IconButton>
             <IconButton aria-label="share">
               <ShareIcon />
-            </IconButton>
+            </IconButton> */}
+            <Typography>Learn more</Typography>
             <IconButton
               className={clsx(classes.expand, {
                 [classes.expandOpen]: expanded,
@@ -102,15 +103,14 @@ export default function ExtractionDuct() {
           </CardActions>
           <Collapse in={expanded} timeout="auto" unmountOnExit>
             <CardContent>
-              <Typography paragraph>Method:</Typography>
-              <Typography paragraph>
+              {/* <Typography paragraph>
                 Heat 1/2 cup of the broth in a pot until simmering, add saffron
                 and set aside for 10 minutes.
-              </Typography>
+              </Typography> */}
               <Typography paragraph>
-                All jobs are cleaned to BESA TR-19 standards, and we provide
-                photo evidence of the clean plus a certificate of hygiene on
-                completion.
+                All <strong>Sanitech</strong> jobs are cleaned to BESA TR-19
+                standards, and we provide photo evidence of the clean plus a
+                certificate of hygiene on completion.
               </Typography>
               <Typography paragraph>
                 It’s very common for extract ducts, filters and so on to be left

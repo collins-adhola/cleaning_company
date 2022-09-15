@@ -44,7 +44,7 @@ export default createTheme({
     },
   },
   container: {
-    width: "1000px",
+    width: "1200px",
     margin: "0 auto",
     padding: "0 2rem",
     [breakpoints.down("sm")]: {

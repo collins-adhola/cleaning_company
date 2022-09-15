@@ -7,6 +7,7 @@ import Image from "material-ui-image";
 import { Box } from "@mui/material";
 import Form from "./Form";
 import { Button } from "@material-ui/core";
+import Footer from "./Footer";
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -87,6 +88,7 @@ export default function ContactForm() {
           <Box>
             <Form />
           </Box>
+
           {/* <Box>
             <Button
               className={classes.quoteIcon}
@@ -101,6 +103,9 @@ export default function ContactForm() {
           </Box> */}
         </Grid>
       </Grid>
+      <Box>
+        <Footer/>
+      </Box>
     </div>
   );
 }

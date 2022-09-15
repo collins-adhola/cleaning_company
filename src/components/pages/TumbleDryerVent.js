@@ -92,20 +92,15 @@ export default function TumbleDryerVent() {
           </CardActions>
           <Collapse in={expanded} timeout="auto" unmountOnExit>
             <CardContent>
-              <Typography paragraph>Method:</Typography>
-              <Typography paragraph>
-                Heat 1/2 cup of the broth in a pot until simmering, add saffron
-                and set aside for 10 minutes.
-              </Typography>
               <Typography paragraph>
                 The Problem When using a tumble dryer, the vent will eventually
                 get blocked with fibres, creating a fire risk.Not only does this
                 increase running costs, it also presents a fire hazard which
-                needs to be tackled.The Solution We use specialist tools
-                including professional brushes and vacuum cleaners to ensure all
-                excess dust, lint and so on are removed from the pipework of
-                your tumble dryer. This will make sure the machine runs safely
-                and more cost-effectively.
+                needs to be tackled.<strong>Sanitech</strong> uses specialist
+                tools including professional brushes and vacuum cleaners to
+                ensure all excess dust, lint and so on are removed from the
+                pipework of your tumble dryer. This will make sure the machine
+                runs safely and more cost-effectively.
               </Typography>
               <Typography paragraph>
                 For your peace of mind, and to ensure high standards are always

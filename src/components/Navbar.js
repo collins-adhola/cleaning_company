@@ -52,6 +52,7 @@ const useStyles = makeStyles((theme) => ({
   },
   indicator: {
     backgroundColor: theme.palette.common.light,
+    left :'60px'
   },
   drawerHeader: {
     display: "flex",
@@ -81,7 +82,7 @@ function Navbar() {
     { name: "Home", link: "/", index: 0 },
     { name: "About", link: "/about", index: 1 },
     {
-      name: "DEEP CLEANING SERVICES",
+      name: "KITCHEN DEEP CLEANING SERVICES",
       link: "/deep-cleaning-services",
       index: 2,
     },
@@ -118,8 +119,8 @@ function Navbar() {
             </IconButton>
           </Hidden>
 
-          <Typography component="h6" className={classes.logo}>
-            SC
+          <Typography component="h6" className={classes.logo} style={{left:'0px'}}>
+            SANITECH HYGIENE
           </Typography>
           <Hidden smDown>
             <Tabs
