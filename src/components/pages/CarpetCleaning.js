@@ -66,8 +66,9 @@ export default function CarpetCleaning() {
               many more appliances. Any equipment you use in your commercial
               kitchen can pose serious risks to your employees and your
               customers if not cleaned properly, and these risks are often
-              ignored with severe consequences. At KDC, we work hard to make
-              sure your business does not compromise on health and safety.
+              ignored with severe consequences. At<strong>Sanitech</strong> , we
+              work hard to make sure your business does not compromise on health
+              and safety.
             </Typography>
           </CardContent>
           <CardActions disableSpacing>
@@ -91,13 +92,12 @@ export default function CarpetCleaning() {
           </CardActions>
           <Collapse in={expanded} timeout="auto" unmountOnExit>
             <CardContent>
-             
               <Typography paragraph>
-                <strong>Sanitech</strong> makes use of a variety of professional deep cleaning
-                techniques to get the job done including the use of solution dip
-                tanks to remove carbon, fat and grease deposits from cooking
-                equipment, which is done by dismantling each appliance and
-                cleaning each component individually.
+                <strong>Sanitech</strong> makes use of a variety of professional
+                deep cleaning techniques to get the job done including the use
+                of solution dip tanks to remove carbon, fat and grease deposits
+                from cooking equipment, which is done by dismantling each
+                appliance and cleaning each component individually.
               </Typography>
               <Typography paragraph>
                 The Problem When using a tumble dryer, the vent will eventually

@@ -68,8 +68,9 @@ export default function CookingEquipment() {
               many more appliances. Any equipment you use in your commercial
               kitchen can pose serious risks to your employees and your
               customers if not cleaned properly, and these risks are often
-              ignored with severe consequences. At KDC, we work hard to make
-              sure your business does not compromise on health and safety.
+              ignored with severe consequences. At <strong>Sanitech</strong> ,
+              we work hard to make sure your business does not compromise on
+              health and safety.
             </Typography>
           </CardContent>
           <CardActions disableSpacing>

@@ -71,15 +71,15 @@ export default function ExtractionDuct() {
               component="p"
               className={classes.textpace}
             >
-              KDC Food Hygiene Ltd specialise in kitchen extraction cleaning
-              which includes removing the grease from canopies and ductwork Call
-              0203322 5579 today for a QUOTATION. At KDC, one of our primary
-              specialities is cleaning canopies, ducts, fans and filters
-              thoroughly in order to fully clean out your commercial kitchen
-              extraction system. This process removes grease and fat deposits
-              which tend to build up over time, especially in busy restaurants,
-              pubs, schools, canteens, hospitals, care homes and similar
-              environments.
+              <strong>Sanitech</strong> Food Hygiene Ltd specialise in kitchen
+              extraction cleaning which includes removing the grease from
+              canopies and ductwork Call 07718313166 today for a QUOTATION. At{" "}
+              <strong>Sanitech</strong> , one of our primary specialities is
+              cleaning canopies, ducts, fans and filters thoroughly in order to
+              fully clean out your commercial kitchen extraction system. This
+              process removes grease and fat deposits which tend to build up
+              over time, especially in busy restaurants, pubs, schools,
+              canteens, hospitals, care homes and similar environments.
             </Typography>
           </CardContent>
           <CardActions disableSpacing>
@@ -118,7 +118,8 @@ export default function ExtractionDuct() {
                 because these places are out of sight, so they can easily be
                 forgotten. Even if you’re aware of the need to keep them clean,
                 doing so can be difficult and inconvenient, especially without
-                the specialist tools and skills we have at our disposal at KDC
+                the specialist tools and skills we have at our disposal at{" "}
+                <strong>Sanitech</strong>
                 Food Hygiene Ltd. The need for getting these specific areas
                 cleaned should not be underestimated. There are three major
                 reasons to take this seriously: White tick icon Hygiene risk –
@@ -133,10 +134,10 @@ export default function ExtractionDuct() {
                 adhered to by anyone operating a commercial kitchen.
               </Typography>
               <Typography>
-                At KDC, we are experts at ensuring you are compliant with
-                regulations, in order to help you operate as a responsible
-                business and minimise the risk of legal costs and consequences
-                later.
+                At <strong>Sanitech</strong> , we are experts at ensuring you
+                are compliant with regulations, in order to help you operate as
+                a responsible business and minimise the risk of legal costs and
+                consequences later.
               </Typography>
             </CardContent>
           </Collapse>

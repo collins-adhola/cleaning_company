@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
   },
   quoteIcon: {
     marginLeft: "80px",
-    backgroundColor: "green",
+    backgroundColor: "#6F9935",
     color: "white",
   },
   tabs: {
@@ -43,16 +43,15 @@ const useStyles = makeStyles((theme) => ({
     marginRight: "10px",
   },
   logo: {
-    ...theme.fonts.bold,
-    backgroundColor: "green",
+    ...theme.fonts.extraBold,
+    backgroundColor: "#6F9935",
     color: "white",
-    borderRadius: "40%",
-    width: "25px",
-    border: "1px grey solid",
+    borderRadius: "50%",
+    width: "45px",
   },
   indicator: {
     backgroundColor: theme.palette.common.light,
-    left :'60px'
+    left: "60px",
   },
   drawerHeader: {
     display: "flex",
@@ -79,6 +78,8 @@ function Navbar() {
   };
 
   const routes = [
+    // { name: "", link: "/", index: 0 },
+    // { name: "", link: "/", index: 1 },
     { name: "Home", link: "/", index: 0 },
     { name: "About", link: "/about", index: 1 },
     {
@@ -108,6 +109,13 @@ function Navbar() {
     <Box>
       <AppBar position="static">
         <Toolbar className={classes.container}>
+          <Typography
+            component="h4"
+            className={classes.logo}
+            style={{ fontSize: 20 }}
+          >
+            SHL
+          </Typography>
           <Hidden mdUp>
             <IconButton
               edge="start"
@@ -119,9 +127,13 @@ function Navbar() {
             </IconButton>
           </Hidden>
 
-          <Typography component="h6" className={classes.logo} style={{left:'0px'}}>
+          {/* <Typography
+            component="h6"
+            className={classes.logo}
+            style={{ left: "0px" }}
+          >
             SANITECH HYGIENE
-          </Typography>
+          </Typography> */}
           <Hidden smDown>
             <Tabs
               value={tabIndex}
@@ -162,6 +174,7 @@ function Navbar() {
         </div>
         <Divider />
         <List>
+        
           {routes.map((route, index) => (
             <ListItem
               key={`${route}${index}`}
@@ -171,6 +184,7 @@ function Navbar() {
               onClick={handleDrawerClose}
               button
             >
+           
               <ListItemText primary={route.name} />
             </ListItem>
           ))}

@@ -53,7 +53,7 @@ export default function About() {
               color="initial"
               className={classes.titleText}
             >
-              SANITECH Ltd
+              SANITECH HYGIENE Ltd
             </Typography>
           </div>
           <div>
@@ -75,13 +75,14 @@ export default function About() {
               ductwork, extraction systems and equipment to a high standard is a
               vital part of our professional service.
               <br />
-              In fact, at KDC, cleaning means going above and beyond the minimum
-              legal requirements in every area. That’s why our services include
-              kitchen, structural and extraction cleaning, so you can be
-              confident that no detail is forgotten each time we visit you. Our
-              aim is to help you make sure no element of your premises lets you
-              down upon inspection, from your kitchen canopy to all those
-              hard-to-reach areas surrounding your appliances and equipment.
+              In fact, at <strong>Sanitech</strong> , cleaning means going above
+              and beyond the minimum legal requirements in every area. That’s
+              why our services include kitchen, structural and extraction
+              cleaning, so you can be confident that no detail is forgotten each
+              time we visit you. Our aim is to help you make sure no element of
+              your premises lets you down upon inspection, from your kitchen
+              canopy to all those hard-to-reach areas surrounding your
+              appliances and equipment.
             </Typography>
           </div>
         </Grid>
