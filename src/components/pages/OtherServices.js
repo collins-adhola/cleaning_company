@@ -98,9 +98,7 @@ export default function OtherServices() {
         container
         spacing={1}
         className={classes.root}
-        // style={{
-        //   background: "linear-gradient(to right bottom, #430089, #82ffa1)",
-        // }}
+      
       >
         <Grid item sm={12} md={3}>
           <CookingEquipment />

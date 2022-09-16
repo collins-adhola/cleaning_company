@@ -14,11 +14,11 @@ const useStyles = makeStyles((theme) => ({
 export default function Form() {
   const classes = useStyles();
 
-  const [name, setName] = React.useState("Name");
+  const [name, setName] = React.useState(" ");
   const handleNameChange = (event) => {
     setName(event.target.value);
   };
-  const [phone, setPhone] = React.useState("Enter your phone number");
+  const [phone, setPhone] = React.useState(" ");
   const handlePhoneChange = (event) => {
     setPhone(event.target.value);
   };
@@ -36,6 +36,7 @@ export default function Form() {
         style={{ backgroundColor: "white", margin: "auto", padding: "60px" }}
       >
         <Typography
+          placeholder={"name"}
           variant="h5"
           color="initial"
           style={{ color: "black", paddingBottom: "30px" }}
@@ -52,12 +53,14 @@ export default function Form() {
         </Typography>
 
         <TextField
+        
           id="outlined-name"
           label="Name"
           value={name}
           onChange={handleNameChange}
         />
         <TextField
+        
           id="outlined-name"
           label="Phone"
           value={phone}
@@ -68,8 +71,11 @@ export default function Form() {
             className={classes.quoteIcon}
             variant="outlined"
             style={{ backgroundColor: "#2B748C", margin: "auto" }}
-            onClick={() => {
-              alert("clicked");
+            onClick={(e) => {
+              // alert("clicked");
+              console.log(e.target);
+              console.log(e.refs.name.value);
+              console.log(e.target.refs.phone);
             }}
           >
             Send Request

@@ -118,6 +118,11 @@ export default function Hero() {
   // listHandler();
 
   const classes = useStyles();
+  const list = services.map(function (service, i) { return (
+    <ListItemText>
+      service <br />
+    </ListItemText>
+  );});
 
   return (
     <div>
@@ -188,6 +193,8 @@ export default function Hero() {
                         <ListItemIcon>
                           <CheckCircleOutlineIcon />
                         </ListItemIcon>
+
+                        
                         <ListItemText>Kitchen Deep Cleaning</ListItemText>
                       </ListItem>
                       <ListItem>
@@ -229,9 +236,11 @@ export default function Hero() {
               <CardActions>
                 <Button
                   className={classes.quoteIcon}
+                  style={{ backgroundColor: "#6F9935", bottom: "7px" }}
                   variant="outlined"
-                  onClick={() => {
-                    alert("clicked");
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.location.href = "/contact";
                   }}
                 >
                   GET A QUOTE

@@ -156,9 +156,12 @@ function Navbar() {
               <Button
                 className={classes.quoteIcon}
                 variant="outlined"
-                onClick={() => {
-                  alert("clicked");
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.location.href = "/contact";
+                 
                 }}
+              
               >
                 GET A QUOTE
               </Button>
@@ -174,7 +177,6 @@ function Navbar() {
         </div>
         <Divider />
         <List>
-        
           {routes.map((route, index) => (
             <ListItem
               key={`${route}${index}`}
@@ -184,7 +186,6 @@ function Navbar() {
               onClick={handleDrawerClose}
               button
             >
-           
               <ListItemText primary={route.name} />
             </ListItem>
           ))}

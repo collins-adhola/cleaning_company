@@ -103,8 +103,8 @@ export default function About() {
               className={classes.aboutText}
             >
               Welcome to <strong>Sanitech</strong> Food Hygiene Ltd. Based in
-              Hertfordshire but operating across London. We are one of the UK’s
-              leading providers of commercial kitchen deep cleaning services.
+              London but operating across the UK. We are
+               providers of commercial kitchen deep cleaning services and along with everything food hygiene.
               Our specialised services are designed to make sure your kitchen
               and premises are fully compliant with health and safety laws as
               well as insurance requirements. In fact, our professional deep
@@ -118,7 +118,7 @@ export default function About() {
           item
           sm={12}
           md={6}
-          // style={{ height: "50%", width: "50%", padding: "60px" }}
+        
         >
           <Image src="/images/kitchen-vent-1.jpeg" />
         </Grid>
