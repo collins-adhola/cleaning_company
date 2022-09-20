@@ -89,18 +89,7 @@ export default function ContactForm() {
             <Form />
           </Box>
 
-          {/* <Box>
-            <Button
-              className={classes.quoteIcon}
-              variant="outlined"
-              style={{ backgroundColor: "#2B748C", margin: "auto" }}
-              onClick={() => {
-                alert("clicked");
-              }}
-            >
-              Send Request
-            </Button>
-          </Box> */}
+        
         </Grid>
       </Grid>
       <Box>

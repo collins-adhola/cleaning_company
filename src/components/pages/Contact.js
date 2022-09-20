@@ -76,7 +76,7 @@ export default function Contact() {
       <Grid item xs={12} sm={3}>
         <Card className={classes.root} variant="elevation">
           <CardContent>
-            {/* <EmailIcon /> */}
+            <EmailIcon />
             <Typography variant="h5" component="h2">
               Email us
               <br />

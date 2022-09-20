@@ -108,6 +108,17 @@ export default function Hero() {
     "Infection Control Cleaning",
   ];
 
+  const serviceItems = services.map((service)=>
+  <ListItem key={services.toString()}>
+                        <ListItemIcon>
+                          <CheckCircleOutlineIcon />
+                        </ListItemIcon>
+
+                        <ListItemText>{service}</ListItemText>
+                </ListItem>
+
+  
+  )
   // const listHandler= services.map(service =>
 
   //   console.log(service, i)
@@ -118,11 +129,7 @@ export default function Hero() {
   // listHandler();
 
   const classes = useStyles();
-  const list = services.map(function (service, i) { return (
-    <ListItemText>
-      service <br />
-    </ListItemText>
-  );});
+
 
   return (
     <div>
@@ -178,7 +185,11 @@ export default function Hero() {
           <Grid item xs={12} sm={4} className={classes.heroGridSm}>
             <Card className={classes.paperSm} variant={"outlined"}>
               <CardContent>
-                <Typography variant="h5" component="h4">
+                <Typography
+                  variant="h5"
+                  component="h4"
+                  // style={{ color: "#2E3A3D" }}
+                >
                   Services we provide
                   <br />
                 </Typography>
@@ -187,48 +198,9 @@ export default function Hero() {
                   component="h6"
                   className={classes.heroList}
                 >
-                  <div>
-                    <List>
-                      <ListItem>
-                        <ListItemIcon>
-                          <CheckCircleOutlineIcon />
-                        </ListItemIcon>
-
-                        
-                        <ListItemText>Kitchen Deep Cleaning</ListItemText>
-                      </ListItem>
-                      <ListItem>
-                        <ListItemIcon>
-                          <CheckCircleOutlineIcon />
-                        </ListItemIcon>
-                        <ListItemText>Cooking Equipment</ListItemText>
-                      </ListItem>
-                      <ListItem>
-                        <ListItemIcon>
-                          <CheckCircleOutlineIcon />
-                        </ListItemIcon>
-                        <ListItemText>Structural Cleaning</ListItemText>
-                      </ListItem>
-                      <ListItem>
-                        <ListItemIcon>
-                          <CheckCircleOutlineIcon />
-                        </ListItemIcon>
-                        <ListItemText>Canopy & Filter Cleaning</ListItemText>
-                      </ListItem>
-                      <ListItem>
-                        <ListItemIcon>
-                          <CheckCircleOutlineIcon />
-                        </ListItemIcon>
-                        <ListItemText>Ductwork & Fan Cleaning</ListItemText>
-                      </ListItem>
-                      <ListItem>
-                        <ListItemIcon>
-                          <CheckCircleOutlineIcon />
-                        </ListItemIcon>
-                        <ListItemText>Infection Control Cleaning</ListItemText>
-                      </ListItem>
-                    </List>
-                  </div>
+                <div>
+                <List>{serviceItems}</List>
+                </div>
                   <br />
                 </Typography>
               </CardContent>
