@@ -96,11 +96,7 @@ export default function KitchenDeepClean() {
         </Grid>
         <Grid item sm={12} md={12}>
           <Contact />
-        </Grid>
-        <Grid item sm={12} md={6}></Grid>
-        <Grid item sm={12} md={6}>
-          {" "}
-        </Grid>
+        </Grid>     
       </Grid>
       <Box>
         <ContactForm />

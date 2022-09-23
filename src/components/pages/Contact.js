@@ -76,13 +76,13 @@ export default function Contact() {
       <Grid item xs={12} sm={3}>
         <Card className={classes.root} variant="elevation">
           <CardContent>
-            <EmailIcon />
+          
             <Typography variant="h5" component="h2">
               Email us
               <br />
             </Typography>
 
-            <Typography variant="subtitle2" component="h6">
+            <Typography variant="subtitle1" component="h6">
               deepclean.outlook.com
               <br />
             </Typography>

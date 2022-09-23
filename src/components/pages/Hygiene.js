@@ -39,7 +39,7 @@ export default function About() {
     <div className={classes.root}>
       <Grid container>
         <Grid item xs={12}>
-          <Typography variant="h4">
+          <Typography variant="h4" style={{ color: "#2E819C",}}>
             Don’t take the risk… be safe, be clean, be legal.
           </Typography>
         </Grid>
@@ -86,7 +86,7 @@ export default function About() {
             </Typography>
           </div>
         </Grid>
-        <Grid item xs={12} md={6} className={classes.aboutPhoto}>
+        <Grid item xs={7} md={6} className={classes.aboutPhoto}>
           <Box>
             <Image
               src="/images/hygieneRating.jpeg"

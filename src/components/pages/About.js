@@ -5,13 +5,16 @@ import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import Image from "material-ui-image";
 import { Box } from "@mui/material";
+import Contact from "./Contact";
+import Footer from "../Footer";
+import ContactForm from "../ContactForm";
 
 const useStyles = makeStyles((theme) => ({
   container: {
     ...theme.container,
   },
   root: {
-    ...theme.container,
+    // ...theme.container,
     flexGrow: 1,
     display: "flex",
     flexDirection: "row",
@@ -52,6 +55,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "...theme.palette.beta",
     marginBottom: "40px",
     width: "30%",
+    color: "#2E819C",
     // maxWidth: "100%",
     marginLeft: "0px",
     // marginTop: "80px",
@@ -67,6 +71,7 @@ const useStyles = makeStyles((theme) => ({
   services: {
     padding: "5px",
     textAlign: "center",
+    color: "#2E819C",
   },
 }));
 
@@ -103,26 +108,24 @@ export default function About() {
               className={classes.aboutText}
             >
               Welcome to <strong>Sanitech</strong> Food Hygiene Ltd. Based in
-              London but operating across the UK. We are
-               providers of commercial kitchen deep cleaning services and along with everything food hygiene.
-              Our specialised services are designed to make sure your kitchen
-              and premises are fully compliant with health and safety laws as
-              well as insurance requirements. In fact, our professional deep
-              cleaning services can prepare your kitchen to meet even the
+              London but operating across the UK. We are providers of commercial
+              kitchen deep cleaning services and along with everything food
+              hygiene. Our specialised services are designed to make sure your
+              kitchen and premises are fully compliant with health and safety
+              laws as well as insurance requirements. In fact, our professional
+              deep cleaning services can prepare your kitchen to meet even the
               highest standards.
             </Typography>
           </div>
         </Grid>
 
-        <Grid
-          item
-          sm={12}
-          md={6}
-        
-        >
+        <Grid item xs={12} md={6}>
           <Image src="/images/kitchen-vent-1.jpeg" />
         </Grid>
+        
       </Grid>
+
+     
     </div>
   );
 }

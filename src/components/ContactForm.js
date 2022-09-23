@@ -6,7 +6,7 @@ import Typography from "@material-ui/core/Typography";
 import Image from "material-ui-image";
 import { Box } from "@mui/material";
 import Form from "./Form";
-import { Button } from "@material-ui/core";
+import { Button, Paper } from "@material-ui/core";
 import Footer from "./Footer";
 
 const useStyles = makeStyles((theme) => ({
@@ -36,6 +36,13 @@ const useStyles = makeStyles((theme) => ({
   },
   contactText: {
     color: "white",
+  },
+  // aboutText: {
+  //   backgroundColor: "#2E3A3D",
+  // },
+  formBody: {
+    backgroundColor: "white",
+    height: "100%",
   },
 }));
 
@@ -68,7 +75,7 @@ export default function ContactForm() {
               className={classes.contactText}
             ></Typography>
             <Typography variant="h5" color="initial" style={{ color: "white" }}>
-              Give us a call or send an email. <br /> <br />
+              Give us a call or send an email. <br />
             </Typography>
 
             <Typography style={{ color: "white" }}>
@@ -84,16 +91,19 @@ export default function ContactForm() {
           </Box>
         </Grid>
 
-        <Grid item sm={1} md={6}>
-          <Box>
-            <Form />
-          </Box>
+        <Grid item sm={12} md={6} className={classes.formBody}>
+          <Paper>
+            {/* <Typography style={{paddingTop:'10px',paddingBottom:'60px'}}>
+              Send us your name and number and we’ll contact you at the earliest
+              convenience.
+            </Typography> */}
 
-        
+            <Form />
+          </Paper>
         </Grid>
       </Grid>
       <Box>
-        <Footer/>
+        <Footer />
       </Box>
     </div>
   );

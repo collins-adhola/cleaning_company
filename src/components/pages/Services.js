@@ -19,12 +19,9 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: "1",
     justifyContent: "space-between",
     alignItems: "end",
-    // border: "1px solid green",
     flex: "0 0 auto",
     alignSelf: "stretch",
-    // "& .MuiGrid-grid-xs-12": {
-    //   color: "green",
-    // },
+   
     "& button": {
       color: "#2E819C",
     },
@@ -41,21 +38,10 @@ const useStyles = makeStyles((theme) => ({
 
 export default function MediaCard(props) {
   const classes = useStyles();
-  // const [deepClean, setDeepClean] = useState(false);
 
-  // const handleDeepclean = (e) => {
-  //   // return console.log("I have been clicked");
-  //   // return setDeepClean("/deep-cleaning-services")
-
-  //   setDeepClean( <KitchenDeepClean/> , console.log("hi"))
-  // };
 
   return (
-    <div
-    // style={{
-    //   background: "linear-gradient(to right bottom, #479999, #82ffa1)",
-    // }}
-    >
+    <div>
       <Box>
         <Typography
           variant="h4"
@@ -66,9 +52,9 @@ export default function MediaCard(props) {
           OUR SERVICES
         </Typography>
       </Box>
-      <Grid container className={classes.container} space={2}>
+      <Grid container className={classes.container} spacing={2}>
         <Grid item xs={12} md={6}>
-          <Card className={classes.root} space={3}>
+          <Card className={classes.root} spacing={3}>
             <CardActionArea>
               <CardMedia
                 className={classes.media}

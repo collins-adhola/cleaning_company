@@ -188,7 +188,7 @@ export default function Hero() {
                 <Typography
                   variant="h5"
                   component="h4"
-                  // style={{ color: "#2E3A3D" }}
+                  style={{ color: "#2E819C" }}
                 >
                   Services we provide
                   <br />
@@ -198,9 +198,9 @@ export default function Hero() {
                   component="h6"
                   className={classes.heroList}
                 >
-                <div>
-                <List>{serviceItems}</List>
-                </div>
+                  <div>
+                    <List>{serviceItems}</List>
+                  </div>
                   <br />
                 </Typography>
               </CardContent>
